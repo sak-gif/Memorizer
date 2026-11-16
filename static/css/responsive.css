@@ -4,7 +4,9 @@
         cursor: pointer;
     }
 
-
+.navcontainer{
+        width: 500px;
+    }
     body{
         overflow-x: hidden;
         width: 500px;
@@ -72,7 +74,9 @@
 }
 
 @media screen and  (max-width: 450px){
-
+    .navcontainer{
+        width: 450px;
+    }
     .logo{
         width: 80px;
         height: 89px;
@@ -106,6 +110,9 @@
 }
 
 @media  screen and (max-width: 430px) {
+    .navcontainer{
+        width: 430px;
+    }
     .signin{
         left: 150px;
     }
@@ -123,6 +130,9 @@
 }
 
 @media  screen and (max-width: 400px) {
+    .navcontainer{
+        width: 400px;
+    }
     .signin{
         left: 173px;
     }
@@ -139,6 +149,9 @@
     }
 }
 @media  screen and (max-width: 380px) {
+    .navcontainer{
+        width: 370px;
+    }
     .signin{
         left: 192px;
     }
@@ -155,6 +168,9 @@
     }
 }
 @media  screen and (max-width: 375px) {
+    .navcontainer{
+        width: 350px;
+    }
     .signin{
         left: 210px;
     }
