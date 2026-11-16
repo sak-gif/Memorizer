@@ -1,0 +1,101 @@
+.home-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.home-body-header{
+    display: flex;
+    width: 700px;
+    height: 70px;
+    justify-content: space-between;
+    background: linear-gradient(to right, #f1f0f0, #cdcd97);
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+#add-cart-btn{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.greeting-text{
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+.flashcard{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top left , #e5e5e5 0%, #9a9a9a 40%, #1a1a1a 85%, #000 100%);
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+.fa-ellipsis-vertical,.card-info{
+    font-weight: bold;
+    color: white;
+}
+.revise{
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 90%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.flashcard-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.flashcard-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.mini-card{
+    width: 200px;
+    height: 200px;
+    transform: rotate(-30deg);
+}
+.cards-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.home-divs{
+    display: flex;
+    justify-content: space-around;
+}
+.home-left,.home-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    top: 50px;
+    gap: 50px;
+}
+.fa-brain{
+    transform: scale(7);
+    color: gray;
+}
+

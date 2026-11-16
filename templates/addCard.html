@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>أضافة بطاقة</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/addCard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/addCard-responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin-responsive.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo_ar.png') }}" alt="website logo" class="logo">
+
+        <div class="labels">
+            <a href="{{ url_for('home') }}">الرئيسية</a>
+            <a>مجموعاتي</a>
+        </div>
+        <i class="fa-solid fa-bars" id="bars" style="display: none"></i>
+
+        <div class="user-header-bar">
+            <div id="user_account">
+                <i class="fa-solid fa-user"></i>
+                <span id="user-name">محمد محمود</span>
+            </div>
+            <i class="fa-solid fa-right-from-bracket" id="logout"></i>
+        </div>
+    </header>
+
+    <div class="addCard">
+        <div class="left">
+            <div class="card one">
+                دون ثم احفظ
+            </div>
+            <img src="{{ url_for('static', filename='images/cards-logo.png') }}" alt="" class="mini-card">
+        </div>
+        <div class="center">
+
+            <form action="post" class="form" id="form">
+                <div class="form-head">
+                    <p class="title">
+                   انشاء حزمة بطاقات
+                    </p>
+                    <p class="sub-title">
+                        سجل ملاحظاتك هنا للاطلاع عليها لاحقا
+                    </p>
+                </div>
+                <span>
+                    سمي الحزمة
+                </span>
+                <input type="text" id="name" class="name" placeholder="عنوان الحزمة" > </input>
+                <br>
+                <hr>
+                <br>
+                <div class="slide">
+                    <span id="counter">
+                        1
+                    </span>
+                    <div class="the-card">
+                        <span>
+                            الواجهة الأمامية
+                        </span>
+                        <input type="text" name="" id="" placeholder="الواجهة الأمامية">
+                        <span>
+                            الواجهة الخلفية
+                        </span>
+                        <input type="text" name="" id="" placeholder="الواجهة الخلفية">
+                    </div>
+                </div>
+                <br>
+                <div class="add-card" id="add-card">
+                    <span class="add-plus">+</span>
+                </div>
+                <br>
+                <button id="submit-register">
+                    حفظ البطاقة
+                </button>
+            </form>
+
+        </div>
+        <div class="right">
+            <img src="{{ url_for('static', filename='images/cards-logo.png') }}" alt="" class="mini-card">
+            <div class="card one">
+                وصول سهل للمعلومات
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+@media screen and  (max-width: 500px){
+    .left,.right{
+        display: none;
+    }
+    .circle{
+        width: 400px;
+        height: 400px;
+        position: relative;
+    }
+    .center{
+        width: 400px;
+        align-self: center !important;
+        justify-self: center !important;
+        margin: auto !important;
+    }
+    .register-body,.login-body{
+        top: 20px;
+    }
+
+}
+
+@media screen and  (max-width: 470px){
+            .register-body,.login-body{
+                left: 30px;
+    }
+    .circle{
+        left: 25px;
+    }
+
+}
+
+@media  screen and (max-width: 430px) {
+            .register-body,.login-body{
+                left: 40px;
+    }
+    .circle{
+        left: 50px;
+    }
+}
+
+@media  screen and (max-width: 410px) {
+    .register-body,.login-body{
+        left: 50px;
+        }
+    .center{
+        width: 380px;
+    }
+    .circle{
+        width: 374px;
+        height: 374px;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    .center{
+        width: 350px;
+    }
+    .register-body,.login-body{
+        left: 60px;
+    }
+    .circle{
+        width: 340px;
+        height: 340px;
+    }
+}
+
+@media  screen and (max-width: 375px) {
+.register-body,.login-body{
+        left: 70px;
+    }
+    .circle{
+        left: 60px;
+    }
+}
+
+

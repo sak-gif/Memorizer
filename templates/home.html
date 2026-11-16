@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>memorizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home-responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo_ar.png') }}" alt="website logo" class="logo">
+
+        <div class="labels">
+            <a href="{{ url_for('home') }}">الرئيسية</a>
+            <a>مجموعاتي</a>
+        </div>
+        <i class="fa-solid fa-bars" style="display: none" id="bars"></i>
+
+        <div class="user-header-bar">
+            <div id="user_account">
+                <i class="fa-solid fa-user"></i>
+                <span id="user-name">محمد محمود</span>
+            </div>
+            <i class="fa-solid fa-right-from-bracket" id="logout"></i>
+        </div>
+    </header>
+
+    <div class="home-divs">
+
+
+    <div class="home-body">
+        <div class="home-body-header">
+            <p class="greeting-text">
+                مرحبا محمد محمود. جاهز للدراسة اليوم ؟
+            </p>
+            <a href="{{ url_for('addCard') }}" id="add-cart-btn">أنشأ بطاقة جديدة</a>
+        </div>
+        <h2>بطاقاتي</h2>
+        <div class="cards-list">
+            <div class="flashcard">
+                <div class="flashcard-top">
+                    <i class="fa-solid fa-ellipsis-vertical" id="more"></i>
+                    <div class="flashcard-top-left">
+                        <p class="card-info"><span id="cards-counter">15</span> بطاقة </p>
+                    </div>
+                </div>
+                <p class="flashcard-title">
+                    التحضير لبايثون
+                </p>
+                <button id="revise" class="revise">
+                    مراجعة
+                </button>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-top">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more"></i>
+                    <div class="flashcard-top-left">
+                        <p class="card-info"><span class="cards-counter">15</span> بطاقة </p>
+                    </div>
+                </div>
+                <p class="flashcard-title">
+                    التحضير لبايثون
+                </p>
+                <button class="revise">
+                    مراجعة
+                </button>
+            </div>
+
+            <div class="flashcard">
+                <div class="flashcard-top">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more"></i>
+                    <div class="flashcard-top-left">
+                        <p class="card-info"><span class="cards-counter">15</span> بطاقة </p>
+                    </div>
+                </div>
+                <p class="flashcard-title">
+                    التحضير لبايثون
+                </p>
+                <button class="revise">
+                    مراجعة
+                </button>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-top">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more"></i>
+                    <div class="flashcard-top-left">
+                        <p class="card-info"><span class="cards-counter">15</span> بطاقة </p>
+                    </div>
+                </div>
+                <p class="flashcard-title">
+                    التحضير لبايثون
+                </p>
+                <button class="revise">
+                    مراجعة
+                </button>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-top">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more"></i>
+                    <div class="flashcard-top-left">
+                        <p class="card-info"><span class="cards-counter">15</span> بطاقة </p>
+                    </div>
+                </div>
+                <p class="flashcard-title">
+                    التحضير لبايثون
+                </p>
+                <button class="revise">
+                    مراجعة
+                </button>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-top">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more"></i>
+                    <div class="flashcard-top-left">
+                        <p class="card-info"><span class="cards-counter">15</span> بطاقة </p>
+                    </div>
+                </div>
+                <p class="flashcard-title">
+                    التحضير لبايثون
+                </p>
+                <button class="revise">
+                    مراجعة
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+
+</body>
+</html>

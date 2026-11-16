@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    <title>Memorizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo_ar.png') }}" alt="website logo" class="logo">
+
+        <div class="signin">
+            <i class="fa-solid fa-bars" id="bar"></i>
+            <a id="login" class="login" href="{{ url_for('login') }}">تسجيل الدخول</a>
+            <a id="register" class="register" href="{{ url_for('register') }}">إنشاء حساب</a>
+        </div>
+    </header>
+
+    <div class="main-page">
+
+        <div class="introduction">
+            <h1 class="title">
+                تذكر أكثر. <br>
+                ادرس اقل.
+        </h1>
+
+        <p class="sub-title">
+            حول أي شيء تدرسه الى كروت <br>
+            ثم راجعه بسهولة قبل أن تنساه.
+        </p>
+
+        <button id="get-started" class="get-started">لنبدأ!</button>
+        </div>
+
+        <div class="cards-animation">
+            <div class="two-cards">
+                <div id="card-one" class="card one">
+                     ماهو TCO = ?
+                </div>
+                <div id="card-two" class="card two">
+                    عرف السحابة
+                </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/cards-logo.png') }}" alt="" class="main-card">
+
+            <div class="two-cards">
+                <div id="card-three" class="card three">
+                    ماهي الشبكة المحلية؟
+                </div>
+                <div id="card-four" class="card four">
+                    OWASP10?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

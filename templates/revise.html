@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="auto">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/revise.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/revise-responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home-responsive.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>مراجعة</title>
+</head>
+
+
+
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo_ar.png') }}" alt="website logo" class="logo">
+
+        <div class="labels">
+            <a href="{{ url_for('home') }}">الرئيسية</a>
+            <a>مجموعاتي</a>
+        </div>
+        <i class="fa-solid fa-bars" style="display: none" id="bars"></i>
+
+        <div class="user-header-bar">
+            <div id="user_account">
+                <i class="fa-solid fa-user"></i>
+                <span id="user-name">محمد محمود</span>
+            </div>
+            <i class="fa-solid fa-right-from-bracket" id="logout"></i>
+        </div>
+    </header>
+
+<div class="container">
+    <div class="top">
+        <a href="{{ url_for('home') }}"> < العودة</a>
+        <span class="title">
+            Cloud
+        </span>
+        <div class="counter">
+            <span>1</span>/<span>8</span>
+        </div>
+    </div>
+
+    <div class="middle" id="contents">
+        Le definition du Cloud et infrastruture
+    </div>
+
+    <div class="bottom">
+
+        <button id="last"> > السابق  </button>
+        <button id="answer">اظهار الاجابة</button>
+        <button id="next">التالي ></button>
+
+    </div>
+</div>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

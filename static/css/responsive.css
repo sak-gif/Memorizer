@@ -1,0 +1,178 @@
+@media screen and  (max-width: 500px){
+
+    fa-ellipsis-vertical{
+        cursor: pointer;
+    }
+
+
+    body{
+        overflow-x: hidden;
+        width: 500px;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .logo{
+        width: 80px;
+        height: 89px;
+        position: relative;
+        left: 130px;
+    }
+    .signin{
+        position: relative;
+        left : 90px;
+        flex-direction: column;
+
+    }
+
+    #login,#register{
+        padding: 8px 10px ;
+        font-size: 14px;
+        position: relative;
+        }
+    .introduction{
+        width: 100%;
+        position: relative;
+        left: 20px;
+        .title{
+            font-size: 38px !important;
+        }
+    }
+    .cards-animation{
+        flex-direction: column;
+        width: 400px;
+        .two-cards{
+            flex-direction: row !important;
+            justify-content: space-around !important;
+            margin-left: 30px;
+        }
+        .main-card{
+            height: 300px;
+            width: 300px;
+        }
+        .card{
+            height: 60px !important;
+            width: 120px !important;
+
+        }
+    }
+
+
+
+
+
+
+
+
+}
+
+@media screen and  (max-width: 450px){
+
+    .logo{
+        width: 80px;
+        height: 89px;
+        position: relative;
+        left: 150px;
+    }
+    .signin{
+        position: relative;
+        left : 130px;
+        flex-direction: column;
+
+    }
+
+    #login,#register{
+        padding: 8px 10px ;
+        font-size: 14px;
+        position: relative;
+        }
+    .introduction{
+        width: 100%;
+        position: relative;
+        left: 40px;
+        .title{
+            font-size: 38px !important;
+        }
+    }
+    .two-cards{
+        margin-left: 70px !important;
+    }
+
+}
+
+@media  screen and (max-width: 430px) {
+    .signin{
+        left: 150px;
+    }
+    .introduction{
+        width: 100%;
+        position: relative;
+        left: 40px;
+        .title{
+            font-size: 38px !important;
+        }
+    }
+    .two-cards{
+        margin-left: 100px !important;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    .signin{
+        left: 173px;
+    }
+    .introduction{
+        width: 100%;
+        position: relative;
+        left: 60px;
+        .title{
+            font-size: 38px !important;
+        }
+    }
+    .two-cards{
+        margin-left: 115px !important;
+    }
+}
+@media  screen and (max-width: 380px) {
+    .signin{
+        left: 192px;
+    }
+    .introduction{
+        width: 100%;
+        position: relative;
+        left: 60px;
+        .title{
+            font-size: 38px !important;
+        }
+    }
+    .two-cards{
+        margin-left: 125px !important;
+    }
+}
+@media  screen and (max-width: 375px) {
+    .signin{
+        left: 210px;
+    }
+    .introduction{
+        width: 100%;
+        position: relative;
+        left: 80px;
+        .title{
+            font-size: 38px !important;
+        }
+    }
+    .two-cards{
+        margin-left: 130px !important;
+    }
+    .main-card{
+        position: relative;
+        left: 30px;
+    }
+}
+
+
